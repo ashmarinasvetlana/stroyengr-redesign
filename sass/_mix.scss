@@ -1,0 +1,28 @@
+
+
+@mixin logo {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+@mixin reg {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+@mixin semibold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+@mixin cond {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+

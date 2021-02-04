@@ -1,0 +1,67 @@
+.gas
+    &-list
+        list-style-position: inside
+    &-desc
+        max-width: 600px
+    &-title
+        +cond
+        font-size: 24px
+        line-height: 155%
+        letter-spacing: 0.05em
+        color: #3F3F3F
+        text-transform: uppercase
+        font-weight: 700
+        margin-bottom: 50px
+    &-block
+        &__first
+            display: flex
+            justify-content: space-between
+            margin: 20px
+        &__item
+            &__first
+                margin-right: 20px
+                .page-block__img
+                    margin-bottom: 40px
+        &__undertitle
+            font-size: 20px
+            font-weight: 600
+            display: flex
+            align-items: flex-start
+            margin-bottom: 35px
+            max-width: 450px
+            span
+                color: $active
+                display: inline-block
+                margin-right: 7px
+        &__second
+            display: flex
+            justify-content: space-between
+        &__third
+            +flex
+        &__img
+            width: 95%
+            flex-basis: 95%
+            max-width: 95%
+            margin-left: 20px
+            &-mobile
+                display: none
+@media screen and ( max-width: 768px )
+    .gas
+        &-title
+            margin-bottom: 25px
+        &-block
+            flex-direction: column
+            margin: 0px
+            &__img
+                margin-left: 0px
+                width: 100%
+                flex-basis: 100%
+                max-width: 100%
+            &__undertitle
+                font-size: 16px
+                margin-bottom: 25px
+            &__item
+                &__first
+                    margin-right: 0px
+    
+    

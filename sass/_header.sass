@@ -1,0 +1,105 @@
+.header
+    min-height: 90px
+    background-color: $nav
+    margin-bottom: 80px
+    padding-top: 20px
+    padding-bottom: 20px
+    &-burger
+        display: none
+    &-logo
+        margin-right: 40px
+        &:hover
+            text-decoration: none
+    &-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-block
+        display: flex
+        align-items: center
+    &-nav
+        &__list
+            display: flex
+        &__item
+            list-style-type: none
+            margin-right: 60px
+            &:last-child
+                margin-right: 0px
+    &-info
+        &__item
+            margin-left: 30px
+            display: flex
+            align-items: center
+.phone
+    &-link
+        margin-right: 60px
+        color: $light
+        +reg
+        font-size: 16px
+        display: flex
+        align-items: center
+        &__icon
+            margin-right: 5px
+.mobile
+        &-menu
+            &_close
+                display: none
+@media screen and ( max-width: 990px)
+    .header
+        margin-bottom: 60px
+@media screen and ( max-width: 768px)
+    .header
+        position: relative
+        &-burger
+            display: block
+            background-color: transparent
+        &-nav
+            display: none
+            &__mobile
+                display: flex
+                justify-content: center
+                width: 70%
+                height: 100%
+                background-color: $active
+                color: $light
+                position: absolute
+                right: -70%
+                top: 0
+                z-index: 9999
+                padding: 32px
+                transition-duration: 1s
+                &-list
+                    display: flex
+                    flex-direction: column
+                    font-size: 32px
+                    align-items: center
+                    .header-nav__item
+                        margin-right: 0
+                        margin-bottom: 24px
+        &-logo
+            margin-right: 0px
+    .burger
+        display: block
+    .mobile
+        &-menu
+            &_close
+                display: block
+                font-size: 32px
+                color: $light
+                position: absolute
+                background-color: transparent
+                right: 32px
+                top: 32px
+    .menu-animate
+        right: 0
+    .menu-mobile
+        font-size: 20px
+@media screen and ( max-width: 640px)
+    .features-block
+        flex-direction: column
+    .phone
+        &-link
+            display: none
+  
+//@media screen and ( max-width: 486px)
+ 

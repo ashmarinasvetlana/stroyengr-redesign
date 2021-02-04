@@ -1,0 +1,227 @@
+.slider
+    &-top
+        &__item
+            min-height: 500px
+            padding: 60px 90px
+        &__title
+            +cond
+            font-size: 65px
+            line-height: 140%
+            text-transform: uppercase
+            color: $text-color
+            max-width: 50%
+        &__link
+           display: block
+           text-transform: uppercase
+           color: $light
+           font-size: 11px
+           line-height: 47px
+           text-align: center
+           width: 218px
+           height: 50px
+           background-color: $active
+           letter-spacing: 0.05em
+           margin-top: 30px
+           margin-bottom: 40px
+           &:hover
+               text-decoration: none
+               background-color: $active-dark
+        &__container
+            margin-bottom: 90px
+              
+.swiper-container-horizontal
+    .swiper-pagination-bullets
+        bottom: 30px
+.slide
+    &-heating
+        background: url(../img/main/slider/1.jpg) no-repeat center
+        background-size: cover
+    &-water
+        background: url(../img/main/slider/3.jpg) no-repeat center
+        background-size: cover
+    &-gas
+        background: url(../img/main/slider/2.jpg) no-repeat center
+        background-size: cover
+    &-electro
+        background: url(../img/main/slider/6.jpg) no-repeat center
+        background-size: cover
+    &-drain
+        background: url(../img/main/slider/5.jpg) no-repeat center
+        background-size: cover
+    &-vent
+        background: url(../img/main/slider/4.jpg) no-repeat center
+        background-size: cover
+    &-common
+        background: url(../img/main/slider/7.jpg) no-repeat center
+        background-size: cover
+
+//Услуги
+
+.services
+    &-link
+        &:hover
+            text-decoration: none
+            h3
+                transition-duration: 0.6s
+                color: $active
+    &-block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &__item
+            display: flex
+            flex-basis: 29.3%
+            margin-bottom: 50px
+        &__item
+            display: flex
+            align-items: flex-start
+        &__img
+            margin-right: 30px
+            margin-top: 10px
+        &__desc
+            display: flex
+            flex-direction: column
+    &-title
+        margin-bottom: 20px
+
+//Преимущества
+.features
+    &-block
+        display: flex
+        &__item
+            margin-right: 30px
+
+    &-title
+        margin-bottom: 20px
+    &-desc
+        margin-bottom: 15px
+        max-width: 410px
+
+//Работы
+.works
+    &-section
+        margin-top: 200px
+        min-height: 350pxm
+    &-img
+        margin-bottom: 15px
+        width: 300px
+        height: 300px
+        object-fit: cover
+    &-slide
+        width: auto
+    &__desc
+        font-weight: 600
+        line-height: 145%
+
+//Контакты
+.contacts
+    margin-bottom: 110px
+    &-block
+        &__item
+            padding: 60px
+        &__title
+            margin-bottom: 35px
+    &-form
+        &__input
+           margin-bottom: 25px
+           width: 100% 
+    &-group
+        margin-bottom: 40px
+    &-links
+        display: flex
+        flex-wrap: wrap
+    &-link
+        font-size: 14px
+        display: flex
+        align-items: center 
+        margin-right: 20px
+        margin-bottom: 25px
+        width: 200px
+        line-height: 145%
+        &:hover
+            color: $active
+    &-icon
+        margin-right: 8px
+    &-map
+        padding-bottom: 0px
+.map
+    margin-top: 80px
+.icon-link
+    width: 20px
+    margin-right: 10px
+   
+       
+@media screen and ( max-width: 1199px)
+    .title_25 
+        font-size: 20px
+    .more
+        &-link
+            font-size: 12px
+@media screen and ( max-width: 990px)
+    .services
+        &-title
+            max-width: 210px
+        &-block
+            &__item
+                flex-direction: column
+            &__img
+                margin-bottom: 15px
+    .slider
+        &-top
+            &__container
+                margin-bottom: 70px
+            &__title
+                font-size: 45px
+            &__item
+                padding: 60px
+    .works
+        &-section
+            margin-top: 70px
+    .section
+        margin-bottom: 70px
+@media screen and ( max-width: 640px)
+    .map
+        margin-top: 40px
+    .input
+        &-group
+            width: 100%
+    .services
+        &-block
+            &__img
+                margin-right: 0px
+            &__item
+                flex-basis: 50%
+                align-items: center
+            &__desc
+                text-align: center
+    .section
+        &-desc
+            max-width: 280px
+    .slider
+        &-top
+            height: 400px
+            &__title
+                max-width: 100%
+@media screen and ( max-width: 486px )
+    .slider
+        &-top
+            &__title
+                font-size: 32px
+            &__item
+                padding: 32px
+    .services
+        &-title
+                font-size: 16px
+    .contacts
+        &-block
+            &__item
+                padding: 32px 20px
+                margin-bottom: 15px
+    .section
+        margin-bottom: 40px
+          
+@media screen and ( max-width: 321px )
+    .services
+        &-title
+                font-size: 15px
+                word-break: break-word

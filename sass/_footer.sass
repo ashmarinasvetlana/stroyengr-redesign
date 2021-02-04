@@ -1,0 +1,43 @@
+.footer
+    color: $light
+    padding-top: 40px
+    padding-bottom: 40px
+    min-height: 100px
+    background-color: $nav
+    &-container
+        +flex
+        align-items: flex-start
+    &-logo
+        max-width: 150px
+        font-size: 14px
+    &-block
+        display: flex
+    &-year
+        font-size: 14px
+    &-link
+        font-size: 12px
+        text-transform: uppercase
+        color: $light
+        letter-spacing: 0.05em
+        margin-left: 40px
+@media screen and ( max-width: 640px )
+    .footer
+        &-logo
+            font-size: 12px
+        &-link
+            font-size: 11px
+@media screen and ( max-width: 486px )
+    .footer
+        &-logo
+            margin-bottom: 20px
+        &-container
+            flex-direction: column
+        &-block
+            display: flex
+            align-items: center
+        &-link
+            margin-left: 8px
+    
+    
+
+ 

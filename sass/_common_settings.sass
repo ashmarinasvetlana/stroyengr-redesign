@@ -1,0 +1,309 @@
+
+body
+    position: relative;
+    overflow-x: hidden;
+html
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px
+    color: $text-color
+
+img
+    max-width: 100%
+a
+    text-decoration: none
+    color: $text-color
+    transition-duration: 0.5s
+    &:hover
+        text-decoration: underline
+        transition-duration: 0.5s
+ul, ol, li, p, h1, h2, h3, h4, h5, h6
+    margin: 0
+    padding: 0
+input, button
+    border: none
+    outline: none
+.margin_50
+    margin-bottom: 50px
+.button
+    width: 220px
+    height: 50px
+    text-transform: uppercase
+    font-size: 12px
+    font-weight: 600
+    letter-spacing: 0.03em
+    text-align: center
+    padding: 15px
+    cursor: pointer
+
+    &_light
+        background-color: $light
+        color: #A5A3A3
+        &:hover
+            color: $text-color
+            background-color: lighten($light, 0.5)
+.active
+    color: $active
+.light
+    color: $light
+.text
+    +reg
+    font-size: 16px
+    line-height: 145%
+    
+.menu
+    color: $light
+    font-size: 12px
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    +reg
+.hide
+    display: none
+.show
+    display: block
+.section
+    margin-bottom: 200px
+    &__title
+        +cond
+        font-size: 48px
+        text-transform: uppercase
+        color: $text-color
+        margin-right: 30px
+        letter-spacing: 0.03em
+        &_light
+            color: $light
+    &-heading
+        margin-bottom: 90px
+        display: flex
+        justify-content: flex-start
+        &_light
+            color: $light
+    &-desc
+        max-width: 560px
+        line-height: 145%
+        margin-top: 7px
+    
+.logo
+    +logo
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    font-size: 14px
+    color: $light
+    line-height: 140%
+    max-width: 105px
+.burger
+    display: none
+.title
+    &_25
+        font-size: 25px
+        +semibold
+        line-height: 140%
+        color: $text-color
+    &_18
+        font-size: 18px
+        text-transform: uppercase
+        letter-spacing: 0.03em
+        +cond
+        font-weight: 700
+    &_active
+        color: $active
+        
+.feedback
+    background-color: $active
+    width: 100%
+    min-height: 335px
+    padding: 90px 0 90px 0
+    &-block
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &-form
+        &__group
+            +flex
+            align-items: flex-end
+        &__input
+            margin-right: 25px
+
+.form
+    &-input
+        width: 300px
+        height: 40px
+        padding: 15px
+        border: 1px solid rgba(240, 240, 240, 0.3)
+        background-color: transparent
+    &-label
+        font-size: 14px
+        font-weight: 300
+        margin-bottom: 7px
+
+.input
+    &-group
+        display: flex
+        flex-direction: column       
+        
+.checkbox
+    font-size: 12px
+    margin-top: 15px
+    display: flex
+    align-items: center
+    &-custom
+        display: flex
+        &__input
+            margin-right: 5px
+    
+.more-link
+    font-size: 14px
+    text-transform: uppercase
+    color: #A5A3A3
+    display: block
+    letter-spacing: 0.03em
+    &:hover
+        color: $active
+.block
+    &_100
+        +flex
+    &_50
+        width: 50%
+    &_active
+        background-color: $active
+.list
+    list-style-position: outside
+    max-width: 500px
+    margin-bottom: 50px
+    &__item
+        margin-bottom: 20px
+        font-size: 16px
+        line-height: 145%
+        &::marker
+            margin-right: 20px
+            font-weight: 500
+            color: $active
+.page
+    &-block
+        +flex
+        margin-top: 110px
+        align-items: flex-start
+        &__desc
+            display: flex
+            flex-direction: column
+        &__img
+            flex-basis: 50%
+            max-width: 50%
+            flex-shrink: 0
+    &-text
+        margin-bottom: 25px
+        max-width: 500px
+     
+.popup 
+  z-index: 10
+  position: fixed
+  display: none
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(40, 37, 37, 0.8)
+
+
+.popup__form 
+  display: flex
+  flex-direction: column
+
+.popup-content 
+  position: fixed
+  max-width: 590px
+  left: 50%
+  top: 10%
+  background-color: $nav
+  transform: translateX(-50%)
+  padding: 68px 103px
+
+
+.popup-close 
+  cursor: pointer
+  font-size: 16px
+  line-height: 130%
+  color: rgba(40, 37, 37, 0.9)
+  color: #FFFFFF
+  border: none
+  background-color: transparent
+  font-weight: 300
+  font-size: 32px
+  outline: none
+
+.popup-close:active 
+  outline: none
+
+
+.popup__btn 
+  width: 386px
+  height: 57px
+  text-align: center
+  line-height: 130%
+  color: rgba(40, 37, 37, 0.9)
+  background-color: rgba(40, 37, 37, 0.9)
+  color: #FFFFFF
+  font-size: 18px
+  line-height: 130%
+  border: none
+  outline: none
+  transition-duration: 1s
+  margin-top: 40px
+
+.alert 
+    background-color: transparent
+.alert-content
+    padding: 40px 50px
+    position: fixed
+    top: 15%
+    left: 50%
+    z-index: 222
+
+.alert__header 
+    display: flex
+    color: #fff
+    align-items: center
+
+.alert__title 
+    font-size: 18px
+    margin-right: 16px
+.alert-close 
+    font-size: 22px
+
+
+@media (max-width: 1199px)
+    .form
+        &-input
+            width: 220px
+@media (max-width: 990px)
+    .feedback
+        &-form
+            &__group
+                flex-direction: column
+                align-items: flex-start
+                .input-group
+                    margin-bottom: 25px
+    .form
+        &-input
+            width: 100%
+    .section
+        &-heading
+            margin-bottom: 60px
+            flex-direction: column
+    .input-group
+        width: 50%
+    .contacts
+        &-block
+            flex-direction: column
+            &__item
+                width: 100%
+@media screen and ( max-width: 768px)
+    .section
+        margin-bottom: 70px
+        &__title
+            font-size: 32px
+    .section
+        &-heading
+            margin-bottom: 40px
+    
